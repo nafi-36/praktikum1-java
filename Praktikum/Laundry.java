@@ -23,7 +23,7 @@ class Pelanggan {
 
     public void daftar() {
         try {
-            System.out.println("=== Masukkan Data Pelanggan ===");
+            System.out.println("===== Masukkan Data Pelanggan =====");
             System.out.print("Nama pelanggan : ");
             nama = input.nextLine();
             System.out.print("No. telepon : ");
@@ -40,7 +40,7 @@ class Pelanggan {
     }
 
     public void data() {
-        System.out.println("=== Menampilkan Data Pelanggan ===");
+        System.out.println("===== Menampilkan Data Pelanggan =====");
         System.out.println("Nama pelanggan : " + nama);
         System.out.println("No. telepon : " + telp);
         System.out.println("Alamat : " + alamat);
@@ -62,7 +62,7 @@ class Transaksi {
 
     public void add() {
         try {
-            System.out.println("=== Masukkan Data Transaksi ===");
+            System.out.println("===== Masukkan Data Transaksi =====");
             System.out.print("Tanggal transaksi : ");
             tanggal = input.nextLine();
             System.out.print("Tanggal ambil : ");
