@@ -1,0 +1,59 @@
+1.2 PERTANYAAN PENDAHULUAN
+
+1. Sebutkan tipe data primitif, jelaskan dan berikan contoh yang tepat untuk menggunakan tipe
+   data tersebut. Contoh data minimal 4.
+
+   1. Char -> Tipe data karakter (menyimpan satu character / satu huruf)
+      Contoh: Grade (A-Z)
+   2. Int -> Tipe data yang menyimpan nilai berupa bilangan bulat
+      Contoh: Nilai (100, 90, dll), harga (80500, 99000)
+   3. Float atau Double -> Tipe data yang menyimpan nilai berupa bilangan desimal
+      Contoh: Perhitungan aritmatika yang melibatkan bilangan desimal (2.1)
+   4. Boolean -> Tipe data yang hanya bernilai true dan false
+      Contoh: Pengecekan kondisi (apakah jawaban yang diinputkan sesuai atau tidak (salah atau benar))
+
+2. Buatlah sebuah aplikasi yang dapat digunakan untuk menukarkan value dari 2 buah variabel
+   bertipe integer.
+
+   PSEUDOCODE :
+
+   Deklarasikan variabel a = 100
+   Deklarasikan variabel b = 99
+
+   Cek kondisi awal:
+   Print "Isi variabel A adalah " + a (100)
+   Print "Isi variabel B adalah " + b (99)
+
+   // Buatlah variabel baru untuk menyimpan nilai variabel sebelum diubah
+   Deklarasikan variabel c = a (100)
+
+   // Buatlah nilai dari variabel a bernilai sama dengan variabel b
+   Deklarasikan ulang variabel a = b (99)
+   // Buatlah nilai dari variabel b bernilai sama dengan variabel a diawal deklarasi dengan menggunakan bantuan dari variabel c 
+   Deklarasikan ulang variabel b = c (100)
+
+   Cek kondisi akhir: 
+   Print "Isi variabel A adalah " + a (99)
+   Print "Isi variabel B adalah " + b (100)
+
+   JAVA :
+
+   public class variabel {
+      public static void main(String[] args) {
+         int a = 100;
+         int b = 99;
+
+         System.out.println("Kondisi awal :");
+         System.out.println("Isi variabel A adalah " + a);
+         System.out.println("Isi variabel B adalah " + b);
+
+         int c = a;
+
+         a = b;
+         b = c;
+
+         System.out.println("Kondisi akhir :");
+         System.out.println("Isi variabel A adalah " + a);
+         System.out.println("Isi variabel B adalah " + b);
+      }
+   }
